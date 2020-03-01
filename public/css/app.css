@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+
+.container {
+  padding: 16px;
+  background: #fff;
+  height: 100%;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container .header {
+  font-size: 20px;
+}
+
+input[type=text]:focus {
+  background-color: #F0FFFF;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+
+.registerbtn {
+  background-color: #20B2AA;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 750px;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.facebookbtn {
+  background-color: #191970;
+  color: white;
+  padding: 12px 0px;
+  margin: 25px 0px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  width: 47%;
+  opacity: 0.9;
+}
+
+.facebookbtn:hover {
+  opacity: 1;
+}
+
+.val_error {
+  color: #FF1F1F;
+}
+
+.twitterbtn {
+  background-color: #00BFFF;
+  color: white;
+  padding: 12px 10px;
+  margin-left: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  width: 47%;
+  opacity: 0.9;
+}
+
+.twitterbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+
+a {
+  color: dodgerblue;
+}
+
+.reg {
+  font-size: 30px;
+  text-align: center;
+  color: #778899;
+}
+
+.ipt {
+  margin: 5px 2px 5px 0;
+  border: none;
+  background: #F0F8FF;
+  width: 95%;
+  height: 46px;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  color: #2F4F4F;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #F0F8FF;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+
+.select {
+  position: relative;
+  display: flex;
+  width: 22.5em;
+  height: 3em;
+  line-height: 3;
+  background: #A9A9A9;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+
+/* Arrow */
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #0000FF;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+/* Transition */
+
+.select:hover::after {
+  color: #FFf;
+}
+
+/* Set a grey b ackground color and center the text of the "sign in" section */
+
+.signin {
+  background-color: #191970;
+  text-align: center;
+}
+
